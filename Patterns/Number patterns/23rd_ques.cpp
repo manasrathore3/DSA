@@ -30,19 +30,32 @@ int main(){
     // }
 
     
-    num=1;                                                  //25 
-    for (int i = 0; i < n; i++){
+    // num=1;                                             //25 
+    // for (int i = 0; i < n; i++){
+    //     for (int j = 0; j < n-i-1; j++){
+    //         cout<<"   ";
+    //     }
+    //     for (int j = 0; j < 2*i+1; j++){
+    //         if (i<=2 ){
+    //             cout<<"  "<<num;
+    //         }
+    //         if (i>2){
+    //             cout<<" "<<num;
+    //         }
+    //         num++;
+    //     }
+    //     cout<<endl;
+    // }
+
+
+    for (int i = 0; i < n; i++){                          //26
+        num=1;                                       
         for (int j = 0; j < n-i-1; j++){
-            cout<<"   ";
+            cout<<"  ";
         }
         for (int j = 0; j < 2*i+1; j++){
-            if (i<=2 ){
-                cout<<"  "<<num;
-            }
-            if (i>2){
-                cout<<" "<<num;
-            }
-            num++;
+            cout<<num<<" ";
+            num+=1;
         }
         cout<<endl;
     }
