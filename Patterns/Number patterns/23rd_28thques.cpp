@@ -61,21 +61,39 @@ int main(){
     // }
      
 
-    num=1;
-    for (int i = 0; i < n; i++){                           //27                      
-        for (int j = 0; j < n-i-1; j++){
-            cout<<"  ";
-        }
-        for (int j = 0; j < i+1; j++){
-            cout<<j+1<<" ";
-        }
-        if (i!=0){
-            for (int j = num; j > 0; j--){
-                cout<<j<<" ";
-            }num=num+1;
-        }cout<<endl;
-    }    
+    // num=1;
+    // for (int i = 0; i < n; i++){                           //27                      
+    //     for (int j = 0; j < n-i-1; j++){
+    //         cout<<"  ";
+    //     }
+    //     for (int j = 0; j < i+1; j++){
+    //         cout<<j+1<<" ";
+    //     }
+    //     if (i!=0){
+    //         for (int j = num; j > 0; j--){
+    //             cout<<j<<" ";
+    //         }num=num+1;
+    //     }cout<<endl;
+    // }    
         
-      
+    for (int i = 1; i <= n; i++){
+        num=i;
+        for(int  j = 0 ; j < n-i ; j++){
+           cout<<"    ";
+        }
+        for(int  j = 0 ; j < i ; j++){
+           cout<<num<<"   ";
+           num++;
+        }
+        num=num-2;
+        if (i!=1){   
+        for(int  j = 0 ; j < i-1 ; j++){
+           cout<<num<<"   ";
+           num--;
+        } 
+        }
+        cout<<endl; 
+    }
+
     return 0;
 }
