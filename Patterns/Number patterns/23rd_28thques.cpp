@@ -76,6 +76,8 @@ int main(){
     //     }cout<<endl;
     // }    
         
+
+    // space ka lafda hai sollve kaar lena
     for (int i = 1; i <= n; i++){
         num=i;
         for(int  j = 0 ; j < n-i ; j++){
