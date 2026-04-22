@@ -20,7 +20,7 @@ int nCr(int n, int r){
 }
 
 int main(){
-    cout<<nCr(6,3);
+    cout<<nCr(9,3);
 
     return 0;
 } 
