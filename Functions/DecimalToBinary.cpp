@@ -16,10 +16,7 @@ int decNum(int n){
 }
 
 int main(){
-    for (int i = 2; i < 10; i++)
-    {
-        cout<<decNum(i)<<endl;
-    }
+    cout<<decNum(12)<<endl;
     
     return 0;
 }
