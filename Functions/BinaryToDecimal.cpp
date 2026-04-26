@@ -1,22 +1,22 @@
 #include<iostream>
 using namespace std;
-int BiNum(int n){
+int BiToNum(int Binum){
     int ans=0;
     int pow=1;
-    while(n>0){
+        while(Binum>0){
 
-        int num = n%10;
-        n= n/10;
+          int num = Binum%10;
+          Binum= Binum/10;
 
-        ans+=num*pow;
-        pow*=2;
+          ans+=num*pow;
+          pow*=2;
      
-    }
+        }
     return ans;
 }
 
 int main(){
-    cout<<BiNum(100)<<endl;
+    cout<<BiToNum(11001)<<endl;
     
     return 0;
 }
