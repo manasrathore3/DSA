@@ -9,7 +9,7 @@ int main(){
     // cout<<sizeof(short int)<<endl;
     
     
-    signed int n; 
+    int n; 
     cout<<"Enter n:";
     cin>>n;
     int k,sum=0;
@@ -21,8 +21,7 @@ int main(){
         sum*=10;
     }
 
-    cout<<"run"<<endl;
-    
-    cout<<sum/10;
+    sum/=10;
+    cout<<sum;
     return 0;
 }
