@@ -6,15 +6,26 @@ int main(){
     int marks[5]={4,2,3,0,-5};
     int size = 5;
     int smallest = INT_MAX;
+    int greatest = INT_MIN;
 
+
+    // for (int i = 0; i < size ; i++){
+    //     if (marks[i]<smallest){
+    //         smallest = marks[i];
+    //     } 
+    // }
+
+
+    // 2'nd method using min function
 
     for (int i = 0; i < size ; i++){
-        if (marks[i]<smallest){
-            smallest = marks[i];
-        } 
+        smallest = min(marks[i],smallest);
+        greatest = max(marks[i],greatest);
     }
+
     
     cout<<"Smallest is :"<<smallest<<endl;
+    cout<<"Greatest is :"<<greatest<<endl;
     
     return 0;
 }
