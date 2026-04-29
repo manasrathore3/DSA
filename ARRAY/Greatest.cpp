@@ -1,11 +1,11 @@
 #include<iostream>
-#include <climits>                 //for infinite
+#include <Climits>                 //for infinite
 using namespace std;
 int main(){
     
     int marks[5]={4,2,3,0,-5};
+    int ans = INT_MAX;           //for infinite value 
     int size = 5;
-    int ans = INT_MAX;
 
 
     for (int i = 0; i < size ; i++){
@@ -14,7 +14,7 @@ int main(){
         } 
     }
     
-    cout<<"Smallest is :"<<ans<<endl;
+    cout<<"Greatest is :"<<ans<<endl;
     
     return 0;
 }
