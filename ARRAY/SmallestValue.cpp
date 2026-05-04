@@ -9,25 +9,30 @@ int main(){
     int greatest = INT_MIN;
 
 
-    // for (int i = 0; i < size ; i++){
-    //     if (marks[i]<smallest){
-    //         smallest = marks[i];
-    //     } 
-    // }
+    for (int i = 0; i < size ; i++){
+        if (marks[i]<smallest){
+            smallest = marks[i];
+        } 
+    }
 
-    // cout<<"Smallest is :"<<smallest<<endl;
-    // cout<<"Greatest is :"<<greatest<<endl;
+    cout<<"Smallest is :"<<smallest<<endl;
+    cout<<"Greatest is :"<<greatest<<endl;
 
 
     /* 2'nd method using min function */
-    for (int i = 0; i < size ; i++){
-        smallest = min(marks[i],smallest);
-        greatest = max(marks[i],greatest);
-    }
-
+    // for (int i = 0; i < size ; i++){
+    //     smallest = min(marks[i],smallest);
+    //     greatest = max(marks[i],greatest);
+    // }
+ 
     // cout<<"Smallest Ka Index :"<<smallest<<endl;
     // cout<<"Greatest Ka Index :"<<greatest<<endl;
-    cout<<"Index:"<<marks[smallest]<<endl;
+    
+
+
+    // print index of greatest and smallest numbers ?
+
+
     
     return 0;
 }
