@@ -15,17 +15,19 @@ int main(){
     //     } 
     // }
 
+    // cout<<"Smallest is :"<<smallest<<endl;
+    // cout<<"Greatest is :"<<greatest<<endl;
 
-    // 2'nd method using min function
 
+    /* 2'nd method using min function */
     for (int i = 0; i < size ; i++){
         smallest = min(marks[i],smallest);
         greatest = max(marks[i],greatest);
     }
 
-    
-    cout<<"Smallest is :"<<smallest<<endl;
-    cout<<"Greatest is :"<<greatest<<endl;
+    // cout<<"Smallest Ka Index :"<<smallest<<endl;
+    // cout<<"Greatest Ka Index :"<<greatest<<endl;
+    cout<<"Index:"<<marks[smallest]<<endl;
     
     return 0;
 }

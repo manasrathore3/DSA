@@ -3,21 +3,18 @@
 using namespace std;
 int main(){
     
-    int marks[5]={4,2,3,0,5};
+    int marks[5]={4,2,3,0,50};
     int Greatest = INT_MIN;           //for -ve infinite value 
     int size = 5;
 
 
     for (int i = 0; i < size ; i++){
-        if (marks[i]>Greatest
-        ){
-            Greatest
-             = marks[i];
+        if (marks[i]>Greatest){
+            Greatest = marks[i];
         } 
     }
     
-    cout<<"Greatest is :"<<Greatest
-    <<endl;
+    cout<<"Greatest is :"<<Greatest<<endl;
     
     return 0;
 }
