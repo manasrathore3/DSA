@@ -10,7 +10,7 @@ int main(){
     while ( n > 0){
         rev=n%10;
         n/=10;
-        fin+=rev*10
+        fin+=rev*10;
     }    
 
     
