@@ -13,7 +13,7 @@ int BiToNum(int Binum){
      
         }
     return ans;
-}
+}ccvbnm
 
 int main(){
     cout<<BiToNum(11001)<<endl;
