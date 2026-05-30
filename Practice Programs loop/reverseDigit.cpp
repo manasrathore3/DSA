@@ -3,8 +3,8 @@ using namespace std;
 int main(){
    
 
-    int n,rev;
-    int fin=0;
+    signed int n,rev;
+    signed int fin=0;
     cout<<"Enter N :" ;
     cin>>n;
     
@@ -13,7 +13,7 @@ int main(){
         fin*=10; 
         fin+=rev;   
         n/=10;
-
+        
     }    
     cout<<fin;
 
