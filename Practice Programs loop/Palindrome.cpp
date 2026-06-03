@@ -6,7 +6,8 @@ int main(){
     int fin=0;
     cout<<"Enter N:";
     cin>>n;
-
+    
+    
     if (n>0){
         while ( n > 0){ 
           rev=n%10;
@@ -14,14 +15,10 @@ int main(){
           fin+=rev;   
           n/=10;
         }
-        cout<<fin;
-        if(fin==n){
-           cout<<"Not Palindrome";
-        }else{
-            cout<<"Palindrome";
-        }   
-
-
+      cout<<fin<<endl;
+  cout<<n<<endl;
+    
+    
         ////clear the misTAKE AND REMOVE WRONG CODE
     // }else if (n<0){ 
     //     n=n*(-1);
