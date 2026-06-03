@@ -15,8 +15,7 @@ int main(){
           fin+=rev;   
           n/=10;
         }
-      cout<<fin<<endl;
-  cout<<n<<endl;
+      cout<<fin;
     
     
         ////clear the misTAKE AND REMOVE WRONG CODE
