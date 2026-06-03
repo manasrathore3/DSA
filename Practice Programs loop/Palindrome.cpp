@@ -15,7 +15,20 @@ int main(){
           fin+=rev;   
           n/=10;
         }
-      cout<<fin;
+    if(fin>0){
+        while ( fin > 0){ 
+          rev=fin%10;
+          n*=10; 
+          n+=rev;   
+          fin/=10;
+        }
+    }  
+    if (n==fin)
+    {
+      cout<<"palindrome"<<endl;
+    }
+    
+
     
     
         ////clear the misTAKE AND REMOVE WRONG CODE
