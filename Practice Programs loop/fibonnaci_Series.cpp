@@ -2,17 +2,17 @@
 using namespace std;
 int main(){
      
-    int n,res=0;
-    int y=0;
-    int x=1;
+    int n,next=0;
+    int b=0;
+    int a=1;
     cout<<"Enter N:";
     cin>>n;
   
     for(int i=0;i<n;i++){
-            cout<<res<<endl;
-            res=x+y;
-            x=y;
-            y=res;
+            cout<<next<<endl;
+            next=a+b;
+            a=b;
+            b=next;
         }
 
     return 0;
