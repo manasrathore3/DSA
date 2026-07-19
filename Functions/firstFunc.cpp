@@ -36,7 +36,6 @@ int main (){
 // }
 
 
-
 int main(){
     // cout<<min(1,5);
     // digitSum(145);
