@@ -36,10 +36,25 @@ int main (){
 // }
 
 
-int main(){
-    // cout<<min(1,5);
-    // digitSum(145);
-    return 0;
+// int main(){
+//     // cout<<min(1,5);
+//     // digitSum(145);
+//     return 0;
+// }
+
+
+int decBin(int n){
+    int res=0;
+    while (n>0){
+        res=res*10;
+        res+=n%2;
+        n=n/2;
+    }
+    
+    cout<<res;
 }
 
-
+int main(){
+    decBin(5);
+    return 0;
+}
