@@ -20,20 +20,30 @@ using namespace std;
 // }
 
 
-int main(){
-    int smallest = INT_MAX;
-    int ans;
-    int index;
+// int main(){
+//     int smallest = INT_MAX;
+//     int ans;
+//     int index;
     
-    int arr[]={10,20,30,40};
-    for (int i = 0; i < 4; i++){
-        if (arr[i]<smallest){
-            ans=arr[i];
-            index=i;
-        }
-    }
+//     int arr[]={10,20,30,40};
+//     for (int i = 0; i < 4; i++){
+//         if (arr[i]<smallest){
+//             ans=arr[i];
+//             index=i;
+//         }
+//     }
 
-    cout<<ans<<endl;
-    cout<<"Index is: "<<index;
+//     cout<<ans<<endl;
+//     cout<<"Index is: "<<index;
+//     return 0;
+// }
+
+
+int main(){
+    
+    int marks[4]={1,2,3,4};
+
+    cout<<marks[1];
     return 0;
-}
+  }
+

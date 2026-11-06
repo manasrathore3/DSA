@@ -36,22 +36,27 @@ int main(){
   ////////////////////////////////////////
 
   int size=5;
-  int arr[size]={-1,-107,2,50,8,90};
+  int arr[size]={-1,-107,2,50,90};
 
   int smallest=INT_MAX;
+  int largest=INT_MIN;
+  int S_inx;
+  int L_inx;
   
-  // for (int i = 0; i < size; i++){
-  //   if (arr[i]<smallest){ 
-  //     smallest=arr[i];
-  //   }
-  // }
-
   for (int i = 0; i < size; i++){
-    smallest = min(arr[i],smallest);         //with min function
+    if (arr[i]<smallest){ 
+      smallest=arr[i];
+      S_inx=i;
+    }
+    if (arr[i]>largest){ 
+      largest=arr[i];
+      L_inx=i;
+    }
   }
 
   
-  cout<<"The smallest no is :"<< smallest;
+  cout<<"The smallest no is :"<< smallest<<" at "<<S_inx<<endl;
+  cout<<"The largest no is :"<< largest<<" at "<<L_inx;
 
   return 0;
 }
