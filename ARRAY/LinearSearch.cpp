@@ -14,7 +14,7 @@ int LinearSearch(int arr[], int size , int target){
 int main(){
     int arr[]={10,20,130,15,162};
     
-    cout<<LinearSearch(arr,5,16)<<endl;
+    cout<<LinearSearch(arr,5,162)<<endl;
 
     return 0;
 }

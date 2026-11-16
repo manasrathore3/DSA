@@ -1,44 +1,46 @@
 #include<iostream>
+#include<Climits>  
 using namespace std;
 
-int printHello(){
-    cout<<"Hello\n";
+int bin(int n){
+    int rem=0,ans=0,power=1;
+    while(n>0){
+        rem=n%2;
+        n=n/2;
 
-    return 4;
-}
-
-int sum(int a,int b){    //parameters inme arguments pass krte hai call karte waaqt
-    int s=a+b;
-    return s;
-}
-
-int fact(int n){
-    int factorial=1;
-    for(int i=1;i<=n;i++){
-        factorial*=i;
+        ans+=rem*power;
+        power=power*10;
+       
     }
+   
+    return ans;
 
-    return factorial;
 }
 
-int ncr(int n,int r){
 
-    int nfact=fact(n);
-    int rfact=fact(r);
-    int n_rfact=fact(n-r);
-    
-    return nfact/(rfact*n_rfact);
-    
-}
 int main(){
+    int small=INT_MAX,big=INT_MIN;
+    int size=5, idx_s , idx_b;
+    // int marks[size]={1,6,90,1000,-4};
+    int marks[]={10,10,10,10,10,90};
+
+    for(int i=0;i<size;i++){
+        if(marks[i]<small){
+           small=marks[i];
+           idx_s=i;
+        }
+
+        if(marks[i]>big){
+           big=marks[i];
+           idx_b=i;
+        }
+
+    }
     
-    // printHello();
-    // cout<<printHello()<<endl;   //print value during execution 
-    // int val = printHello();     //val ke andar store kiya phir use kiya
-    // cout<<"Return value is:" << val ;
-   
-    cout<<ncr(6,3);  
-   
-   
+    cout<<"Smallest no. is: "<<small<<" and index is:"<<idx_s<<endl;
+    cout<<"Biggest no. is: "<<big<<" and index is:"<<idx_b<<endl;
+
+        
+
     return 0;
 }
