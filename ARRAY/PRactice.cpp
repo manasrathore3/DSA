@@ -1,26 +1,28 @@
 #include<iostream>
-#include<climits>
 using namespace std;
 
+void reverseArr(int arr[],int sz){
 
-int linear(int n){
-      
-    int arr[]={1,4,7,9,10};
-    for(int i=0;i<5;i++){
-       if(n==arr[i]){
-         return i;
-       }
+    int start = 0;
+    int end = sz-1;
+
+    while(start < end){
+        swap(arr[start],arr[end]);
+        start++;
+        end--;
     }
-
-    return -1;
 }
-
-
-
 int main(){
   
-    cout<<"Item fount at index no : "<<linear(10);
+    int arr[]={1,2,3,4,5,6};
+    int sz=6;
 
+    reverseArr(arr,sz);
+
+    for(int i=0;i<sz;i++){
+      cout<<arr[i]<<" ";
+    }
+    
     return 0;
 }
 
